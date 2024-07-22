@@ -1,0 +1,111 @@
+/* Styles de base */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(148,125,126,1) 69%);
+}
+
+header {
+  background: url('https://lionel-meylan.ch/wp-content/uploads/2022/03/Banniere-breitling-navitimer-b01-chronograph-horlogerie-joaillerie-lionel-meylan-vevey.jpg') no-repeat center center;
+  background-size: cover;
+  color: #ffffff;
+  padding: 150px;
+  text-align: center;
+  height: 30%;
+
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  position: relative; /* Nécessaire pour le texte-shadow */
+  text-shadow:
+      1px 1px 0 #000,
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000;
+}
+
+header p {
+  margin: 0;
+  font-size: 1.2em;
+  text-shadow:
+      1px 1px 0 #000,
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000;
+}
+
+main {
+  padding: 50px;
+}
+
+/* Conteneur des cartes */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+/* Style des cartes */
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  margin: 0 10px;
+}
+
+.card h2 {
+  color: #000000;
+  margin-top: 0;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Style des liens des marques iconiques */
+.brand-button {
+  display: block;
+  background: #8b8b8b; /* Couleur de fond par défaut */
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s; /* Transition douce pour le survol */
+}
+
+.brand-button:hover {
+  background: #8b8b8b; /* Couleur de fond au survol */
+  color: #000000; /* Couleur du texte au survol */
+}
+
+/* Style des éléments de liste */
+.card ul li {
+  margin: 5px 0;
+}
+
+
+.conclusion {
+  margin-bottom: 150px; /* Augmente la valeur pour plus d'espace */
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+footer p {
+  margin: 0;
+}
